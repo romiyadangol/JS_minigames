@@ -14,22 +14,25 @@
         let canvas = document.getElementById("canvas");
         let context = canvas.getContext("2d");
 
+        //board
         context.beginPath();
         context.rect(0, 0, 250, 100);
         context.fillStyle = "black";
         context.fill();
 
+        //red circle
         context.beginPath();
         context.arc(50, 50, 25, 0, Math.PI * 2);
-
         context.fillStyle = "red";
         context.fill();
 
+        //orange circle
         context.beginPath();
         context.arc(125, 50, 25, 0, Math.PI * 2);
         context.fillStyle = "orange";
         context.fill();
 
+        //green circle
         context.beginPath();
         context.arc(200, 50, 25, 0, Math.PI * 2);
         context.fillStyle = "green";
